@@ -198,6 +198,37 @@ main h2 {
     height: 190px;
 }
 
+/* Seção - Wireframe */
+#wireframe {
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.qrcode {
+    display: none;
+}
+
+.textowire span {
+    display: none;
+}
+
+.textowire {
+    padding: 0px 10px;
+    color: var(--cor1);
+}
+
+.textowire h2 {
+    margin-bottom: 10px;
+    font-family: var(--titulo);
+}
+
+.textowire p {
+    margin-bottom: 40px;
+    font-family: var(--texto);
+}
+
 /* Smartphone landscape (deitado) */
 @media (min-width: 576px) {
     /* body {
@@ -344,6 +375,21 @@ main h2 {
     .flex3 {
         flex-direction: row;
         align-items: center;
+    }
+
+    /* Seção - Wireframe*/
+    #wireframe {
+        background-attachment: fixed;
+    }
+
+    #wireframe span {
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
+    }
+
+    .qrcode {
+        display: inline;
     }
 
 }
