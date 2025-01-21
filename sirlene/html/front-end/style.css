@@ -72,6 +72,33 @@
     flex-direction: column;
 }
 
+.card {
+    margin-top: 25px;
+    width: 340px;
+    height: 520px;
+    background: var(--cor2);
+    border: 1px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-family: var(--titulo);
+    font-size: 1.3em;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 40px;
+    font-family: var(--texto);
+    font-size: 1.2em;
+}
+
 /* Smartphone portrait (em pé) */
 /* Cabeçalho */
 header {
@@ -227,6 +254,19 @@ main h2 {
 .textowire p {
     margin-bottom: 40px;
     font-family: var(--texto);
+}
+
+/* Cartões */
+
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--titulo);
 }
 
 /* Smartphone landscape (deitado) */
