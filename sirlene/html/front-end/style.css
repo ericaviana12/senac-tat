@@ -99,6 +99,12 @@
     font-size: 1.2em;
 }
 
+.card a {
+    padding: 10px 100px;
+    font-family: var(--texto);
+    border: 0;
+}
+
 /* Smartphone portrait (em pé) */
 /* Cabeçalho */
 header {
