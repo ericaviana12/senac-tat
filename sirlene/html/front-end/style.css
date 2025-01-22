@@ -72,6 +72,12 @@
     flex-direction: column;
 }
 
+.flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .card {
     margin-top: 25px;
     width: 340px;
