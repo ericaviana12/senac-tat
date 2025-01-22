@@ -281,6 +281,37 @@ main h2 {
     font-family: var(--titulo);
 }
 
+/* RODAPÉ */
+
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+}
+
+address a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+address img {
+    padding-top: 15px;
+}
+
+.icone_local {
+    display: none;
+}
+
+.dados {
+    margin: 30px 0px 15px 0px;
+}
+
+.google_maps {
+    display: none;
+}
+
 /* Smartphone landscape (deitado) */
 @media (min-width: 576px) {
     /* body {
