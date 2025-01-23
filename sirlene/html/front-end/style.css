@@ -510,4 +510,10 @@ footer {
         display: inline;
     }
 
+    /* RODAPÉ */
+
+    .icone_local {
+        display: none;
+    }
+
 }
