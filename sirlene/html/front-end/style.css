@@ -348,23 +348,23 @@ footer {
         text-shadow: var(--cor6) 0.5em 0.5em 0.5em;
     }
 
-/* One Page */
-.video iframe {
-    width: 560px;
-    height: 315px;
-}
+    /* One Page */
+    .video iframe {
+        width: 560px;
+        height: 315px;
+    }
 
-/* RODAPÉ */
+    /* RODAPÉ */
 
-.flex5 {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    .flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.social {
-    margin: 0;
-}
+    .social {
+        margin: 0;
+    }
 
 }
 
