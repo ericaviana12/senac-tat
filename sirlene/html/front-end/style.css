@@ -78,6 +78,11 @@
     justify-content: space-evenly;
 }
 
+.flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .card {
     margin-top: 25px;
     width: 340px;
@@ -312,6 +317,17 @@ address img {
     display: none;
 }
 
+footer {
+    padding: 50px;
+    background: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+
+.social {
+    margin: 15px 0px;
+}
+
 /* Smartphone landscape (deitado) */
 @media (min-width: 576px) {
     /* body {
@@ -331,12 +347,25 @@ address img {
     main h2 {
         text-shadow: var(--cor6) 0.5em 0.5em 0.5em;
     }
-}
 
 /* One Page */
 .video iframe {
     width: 560px;
     height: 315px;
+}
+
+/* RODAPÉ */
+
+.flex5 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    margin: 0;
+}
+
 }
 
 /* Tablet portrait */
