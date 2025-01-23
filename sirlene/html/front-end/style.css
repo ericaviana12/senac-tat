@@ -513,7 +513,24 @@ footer {
     /* RODAPÉ */
 
     .icone_local {
+        display: inline;
+    }
+
+    .icone_mapa {
         display: none;
+    }
+
+    .google_maps {
+        display: inline;
+    }
+
+    .flex6 {
+        flex-direction: row-reverse;
+    }
+
+    address {
+        font-size: 1.5em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif font-weight: 700;
     }
 
 }
