@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .text-purple { color: #4B1979; }
+        .bg-purple { background-color: #4B1979; }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar superior com imagem dos escudos dos clubes -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid justify-content-center">
+            <img src="club_logos.png" alt="Club Logos" class="img-fluid" style="max-height: 50px;">
+        </div>
+    </nav>
+
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="orlando_logo.png" alt="Orlando City" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner principal -->
+    <header class="text-white text-center py-5" style="background: url('banner.jpg') center/cover no-repeat;">
+        <div class="container">
+            <h1>Orlando City</h1>
+            <p>Orlando City Soccer Club</p>
+        </div>
+    </header>
+
+    <!-- Latest News -->
+    <section class="container my-5">
+        <h2 class="text-center text-purple">LATEST NEWS</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="goalkeeper.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h5>
+                        <p class="card-text">December 21, 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="goalkeeper.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h5>
+                        <p class="card-text">December 21, 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="goalkeeper.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h5>
+                        <p class="card-text">December 21, 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="goalkeeper.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <h5 class="card-title">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h5>
+                        <p class="card-text">December 21, 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Information -->
+    <section class="bg-purple text-white text-center py-4">
+        <div class="container d-flex justify-content-around">
+            <div>
+                <h3>61348</h3>
+                <p>STADIUM CAPACITY</p>
+            </div>
+            <div>
+                <h3>2010</h3>
+                <p>FOUNDED</p>
+            </div>
+            <div>
+                <h3>7th</h3>
+                <p>EASTERN CONFERENCE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center my-5">
+        <h2>American club number one in Brazil</h2>
+        <div>
+            <a href="#" class="btn btn-primary">Shop</a>
+            <a href="#" class="btn btn-warning">Register</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <img src="orlando_logo.png" alt="Orlando City" height="50">
+                <p>Popular Posts</p>
+                <a href="#" class="text-warning">Post Title 1</a><br>
+                <a href="#" class="text-warning">Post Title 2</a>
+            </div>
+            <div>
+                <h5>Links</h5>
+                <a href="#" class="text-white">Tickets</a><br>
+                <a href="#" class="text-white">News</a><br>
+                <a href="#" class="text-white">Schedule</a>
+            </div>
+            <div>
+                <h5>Get in Touch</h5>
+                <p>618 E. South Street, Orlando, FL</p>
+                <p>1 855 ORL CITY</p>
+            </div>
+        </div>
+        <p class="text-center mt-3">© Orlando City Soccer 2016. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
