@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="estilo.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,12 +24,13 @@
                 <img src="fotos/clubs.png" alt="Clubes" class="mx-2">
             </div>
         </nav>
-        <a class="navbar-brand" href="#">
-            <img src="fotos/orlando-logo.png" alt="Logo Orlando City Soccer Club">
-        </a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-purple">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple position-relative">
+            <!-- Logo Orlando City Soccer Club (escudo sobreposto) -->
+            <a class="navbar-brand position-absolute top-50 start-50 translate-middle" style="margin-left: -580px;">
+                <img src="fotos/orlando-logo.png" alt="Logo Orlando City Soccer Club" style="width: 80px;">
+            </a>
 
-
+            <!-- Barra de navegação com links e pesquisa -->
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -47,12 +50,123 @@
             </div>
         </nav>
 
-        <main> <!-- Conteúdo principal -->
-            <div class="container">
+        <main class="container-fluid d-flex flex-column justify-content-center align-items-start"> <!-- Banner principal -->
+            <div>
                 <h1>Orlando City</h1>
                 <h2>Orlando City Soccer Club</h2>
             </div>
         </main>
+
+        <!-- Latest News -->
+        <section class="container text-center my-5">
+            <h3 class="text-purple">LATEST NEWS</h3>
+            <hr class="underline">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="fotos/noticia-thumb.jpg" class="img-fluid ">
+                    <h4 class="text-purple text-left">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h4>
+                    <h5 class="text-secondary text-left">December 21, 2015</h5>
+                </div>
+                <div class="col-md-3">
+                    <img src="fotos/noticia-thumb.jpg" class="img-fluid ">
+                    <h4 class="text-purple text-left">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h4>
+                    <h5 class="text-secondary text-left">December 21, 2015</h5>
+                </div>
+                <div class="col-md-3">
+                    <img src="fotos/noticia-thumb.jpg" class="img-fluid ">
+                    <h4 class="text-purple text-left">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h4>
+                    <h5 class="text-secondary text-left">December 21, 2015</h5>
+                </div>
+                <div class="col-md-3">
+                    <img src="fotos/noticia-thumb.jpg" class="img-fluid ">
+                    <h4 class="text-purple text-left">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h4>
+                    <h5 class="text-secondary text-left">December 21, 2015</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="bg-purple text-white text-center py-4">
+            <div class="container d-flex justify-content-around">
+                <div>
+                    <h2 id="info">61348</h2>
+                    <p>STADIUM CAPACITY</p>
+                </div>
+                <div>
+                    <h2 id="info">2010</h2>
+                    <p>FOUNDED</p>
+                </div>
+                <div>
+                    <h2 id="info">7th</h2>
+                    <p>EASTERN CONFERENCE</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action -->
+        <section class="text-center my-5">
+            <h2 class="club-slogan">American club number one in Brazil</h2>
+            <div class="yellow-line"></div>
+
+
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, placeat
+                blanditiis? Mollitia repellendus, neque, rem tempora aspernatur molestiae dicta excepturi iure unde at
+                dignissimos amet corporis alias, beatae consectetur est!</p>
+            <button class="btn mx-2" id="purple">Shop</button>
+            <button class="btn mx-2" id="yellow">Register</button>
+        </section>
+
+        <section class="bg-dark text-white text-center py-4">
+            <div class="container d-flex justify-content-between">
+                <div>
+                    <img src="fotos/orlando-logo.png" alt="Logo" height="120">
+                </div>
+                <div class="col-md-4 text-left">
+                    <p id="posts">Popular Posts</p>
+                    <hr class="underline">
+                    <p id="frase">Neque porro quisquam est, quister.</p>
+                    <p id="ano">January 01, 2016</p>
+
+                    <p id="frase">Neque porro quisquam est, quister.</p>
+                    <p id="ano">January 01, 2016</p>
+                </div>
+                <div class="col-md-4 footer-links text-left">
+                    <p id="posts">Links</p>
+                    <hr class="underline">
+                    <ul class="list-unstyled">
+                        <li><a href="tickets.html" class="text-white">Tickets</a></li>
+                        <li><a href="news.html" class="text-white">News</a></li>
+                        <li><a href="schedule.html" class="text-white">Schedule</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-left" id="dados">
+                    <p id="posts">Get in Touch</p>
+                    <hr class="underline">
+                    <address class="bi bi-geo-alt-fill">
+                        618 E. South Street, Suite 510<br>
+                        Orlando, FL 32801<br>
+                    </address>
+                    <i class="bi bi-telephone-fill"></i> 1 855 ORL CITY
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" class="bi bi-facebook"></a>
+                        <a href="https://www.twitter.com" target="_blank" class="bi bi-twitter"></a>
+                        <a href="https://www.instagram.com" target="_blank" class="bi bi-instagram"></a>
+                        <a href="https://www.pinterest.com" target="_blank" class="bi bi-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-white py-4 d-flex">
+            <div class="copyright col-md-8 text-secondary">
+                <p>&#169; 2025 - Somente para fins educativos</p>
+            </div>
+            <div class="text-center col-md-4">
+                <p class="text-purple">Created by HCODE in Udemy</p>
+            </div>
+        </footer>
+
     </div>
 
     <!-- Ordem: 1º jQuery | 2º Popper | 3º Bootstrap JS -->

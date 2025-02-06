@@ -11,3 +11,135 @@ main {
     display: flex;
     font-family: sans-serif;
 }
+
+#info {
+    font-family: sans-serif;
+    color: rgb(252, 220, 117);
+    font-size: 3em;
+}
+
+.club-slogan {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #6a1b9a; /* Roxo semelhante ao do site */
+    margin-bottom: 1px; /* Espaço entre o texto e a linha */
+}
+
+.yellow-line {
+    width: 200px; /* Largura da linha */
+    height: 6px; /* Espessura da linha */
+    background-color: rgb(252, 220, 117); /* Amarelo semelhante ao do site */
+    margin: 0 auto; /* Centraliza a linha */
+    margin-bottom: 30px;
+}
+
+#yellow {
+    background-color: rgb(252, 220, 117);
+    width: 120px;
+    height: 35px;
+    color: #000;
+    font-size: 15px;
+    border-radius: 0;
+}
+
+#purple {
+    background-color: #4B1979;
+    width: 120px;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 0;
+}
+
+#posts {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#frase {
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+#ano {
+    font-size: 10px;
+    margin-bottom: 15px;
+    color: rgb(252, 220, 117); /* Amarelo semelhante ao do site */
+}
+
+footer {
+    height: 6px; /* Espessura da linha */
+    font-size: 10px;
+    background-color: #000;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.footer-links ul {
+    list-style: none; /* Remove as bolinhas padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px; /* Espaço entre os links */
+    position: relative; /* Para posicionar a seta */
+    padding-left: 10px; /* Espaço para a seta à esquerda */
+}
+
+.footer-links li::before {
+    margin-right: 5px;
+    content: ">"; /* Adiciona a seta */
+    left: 0; /* Alinha a seta à esquerda do link */
+    color: #beb6b6; /* Cor cinza */
+}
+
+.underline {
+    width: 300px; /* Largura da linha */
+    background-color: #beb6b6; /* Cor cinza */
+    margin: 0;         /* Remove margens automáticas */
+    text-align: left;  /* Garante o alinhamento à esquerda */
+    margin-bottom: 15px;
+    color: #beb6b6; /* Cor cinza */
+}
+
+address {
+    text-align: left;
+}
+
+#dados {
+    color: #beb6b6; /* Cor cinza */
+}
+
+.social-icons a {
+    font-size: 10px; /* Tamanho do ícone */
+    color: #beb6b6; /* Cor do ícone */
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid #beb6b6; /* Borda com a mesma cor do ícone */
+    border-radius: 50%; /* Para formar o círculo */
+    display: inline-block; /* Necessário para o border-radius funcionar corretamente */
+    width: 25px; /* Largura do círculo */
+    height: 25px; /* Altura do círculo */
+    text-align: center; /* Alinha o ícone no centro */
+    line-height: 23px; /* Garante que o ícone fique centralizado verticalmente */
+}
+
+.social-icons a:hover {
+    background-color: #beb6b6; /* Fundo quando o mouse passa sobre o ícone */
+    color: #fff; /* Cor do ícone quando o mouse passa sobre */
+}
+
+.navbar {
+    position: relative; /* Contexto de posicionamento para o escudo */
+}
+
+.navbar .position-absolute {
+    position: absolute;
+    top: -20px; /* Ajusta o escudo para sobrepor o conteúdo abaixo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o escudo */
+    width: 60px; /* Tamanho ajustável */
+}
