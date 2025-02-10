@@ -152,3 +152,9 @@ address {
 #frase {
     margin-left: 100px;
 }
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
