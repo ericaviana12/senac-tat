@@ -143,3 +143,12 @@ address {
     transform: translateX(-50%); /* Centraliza o escudo */
     width: 60px; /* Tamanho ajustável */
 }
+
+#links {
+    margin-left: 750px;
+    color: #fff;
+}
+
+#frase {
+    margin-left: 100px;
+}
