@@ -60,6 +60,7 @@ main {
 #frase {
     font-size: 10px;
     margin-bottom: 4px;
+    margin-left: 100px;
 }
 
 #ano {
@@ -147,10 +148,6 @@ address {
 #links {
     margin-left: 750px;
     color: #fff;
-}
-
-#frase {
-    margin-left: 100px;
 }
 
 .navbar-brand {
