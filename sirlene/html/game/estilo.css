@@ -60,6 +60,9 @@ main {
 #frase {
     font-size: 10px;
     margin-bottom: 4px;
+}
+
+#banner {
     margin-left: 100px;
 }
 
@@ -146,7 +149,7 @@ address {
 }
 
 #links {
-    margin-left: 750px;
+    margin-left: 850px;
     color: #fff;
 }
 
