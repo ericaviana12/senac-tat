@@ -1,0 +1,70 @@
+Para validar o comando apertar CTRL + ENTER
+
+/* Criar banco de dados "cadastro" com a definição de caracteres utf8 e coleção de codificação de caracteres (devido ao padrão brasileiro. Ex.: cedilha)*/
+create database cadastro
+default character set utf8
+default collate utf8_general_ci;
+
+/* Para selecionar o banco de dados que vamos utilizar */
+use cadastro;
+
+/* Ver estrutura da tabela */
+describe pessoas;
+
+/* Apagar banco de dados "cadastro"*/
+drop database cadastro;
+
+/* Apagar tabela "pessoas" do banco de dados */
+drop table pessoas;
+
+/* Criar tabela */
+create table pessoas(
+id int not null auto_increment,
+nome varchar(30) not null,
+nascimento date,
+sexo enum ('F', 'M', 'O'),
+peso decimal(5,2),
+altura decimal(3,2),
+nacionalidade varchar(30) default 'Brasil',
+primary key (id)
+)default charset = utf8;
+
+/* Inserir dados na tabela - caso esteja fora de ordem os dados que serão adicionados, inserir primeiro o título do campo que será seguido */
+insert into pessoas
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+('Erica Viana', '1993-02-27', 'F', '58.5', '1.57', 'Brasil');
+
+/* Inserir dados na tabela - caso esteja na ordem os dados que serão adicionados, não é necessário inserir a o título.
+Deve inserir um valor NULL para a coluna id auto-incrementada. */
+insert into pessoas 
+values
+(NULL, 'Bruno Dorea', '1996-10-16', 'M', '71.2', '1.73', 'Brasil');
+
+/* Inserir dados na tabela - caso esteja na ordem os dados que serão adicionados, não é necessário inserir a o título.
+Deve inserir um valor default para a coluna id auto-incrementada, pois o MySQL entende que deve preencher essa coluna automaticamente com o próximo valor incremental disponível
+O default para a coluna país irá garantir que, caso não seja informado um país explicitamente, o valor 'Brasil' seja preenchido automaticamente. */
+insert into pessoas 
+values
+(default, 'Gabriel Coutinho', '2004-08-29', 'M', '61.6', '1.71', default);
+
+/* Alterar a estrutura da tabela */
+alter table pessoas /* Alterar dados da tabela */
+add column profissao varchar(10); /* Adicionar a coluna "profissao" - como nao há descrição de posição, é adicionada ao final da tabela */
+
+/* Apagar coluna "profissao" do banco de dados "cadastro"*/
+alter table pessoas /* Alterar dados da tabela */
+drop column profissao; /* Apagar a coluna "profissao" */
+
+/* Alterar a estrutura da tabela */
+alter table pessoas /* Alterar dados da tabela */
+add column profissao varchar(10) after nome; /* Adicionar a coluna "profissao" após a coluna "nome" */
+
+/* Alterar a estrutura da tabela */
+alter table pessoas /* Alterar dados da tabela */
+add column codigo int first; /* Adicionar a coluna "codigo" como a primeira coluna, devido ao "first" */
+
+/* Alterar a estrutura da tabela */
+alter table pessoas /* Alterar dados da tabela */
+modify column profissao varchar(30) not null default ''; /* Para modificar os tipos primitivos da coluna usando o "modify"
+O "not null" para obrigatoriedade da inserção dos dados e "default" para deixar o campo vazio para quem já está cadastrado */
