@@ -68,3 +68,21 @@ add column codigo int first; /* Adicionar a coluna "codigo" como a primeira colu
 alter table pessoas /* Alterar dados da tabela */
 modify column profissao varchar(30) not null default ''; /* Para modificar os tipos primitivos da coluna usando o "modify"
 O "not null" para obrigatoriedade da inserção dos dados e "default" para deixar o campo vazio para quem já está cadastrado */
+
+/* Renomear a coluna */
+alter table pessoas /* Alterar dados da tabela */
+change column profissao prof varchar(30) not null default ''; /* "change altera o nome do campo - obrigatório inserir o nome antigo e após o nome novo */
+
+/* Apagar coluna "codigo" da tabela do banco de dados "cadastro" */
+alter table pessoas /* Alterar dados da tabela */
+drop column codigo; /* Apagar a coluna "codigo" */
+
+/* Renomear tabela */
+alter table pessoas /* Alterar dados da tabela */
+rename to alunos;
+
+/* Ver estrutura da tabela após renomear */
+describe alunos;
+
+/* Para verificar os dados inseridos na tabela após renomear */
+select * from alunos;
