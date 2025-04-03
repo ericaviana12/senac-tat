@@ -86,3 +86,26 @@ describe alunos;
 
 /* Para verificar os dados inseridos na tabela após renomear */
 select * from alunos;
+
+/* Criar nova tabela "cursos" */
+create table if not exists cursos(
+nome varchar(30) not null unique, /* "unique" -> para cadastro único */
+descricao text, /* "Text" -> para texto longo */
+carga int unsigned, /* "unsigned" -> não aceitar número negativo */
+totaulas int,
+ano year default 2025
+)default charset = utf8;
+
+/* Ver estrutura da nova tabela "cursos" */
+describe cursos;
+
+/* Para verificar os dados inseridos na nova tabela "cursos" */
+select * from cursos;
+
+/* Alterar a estrutura da nova tabela "cursos" */
+alter table cursos /* Alterar dados da nova tabela "cursos" */
+add column idcurso int first; /* Adicionar a coluna "idcurso" como a primeira coluna, devido ao "first" */
+
+/* Alterar a estrutura da nova tabela "cursos" */
+alter table cursos /* Alterar dados da nova tabela "cursos" */
+add primary key(idcurso); /* Transformar a coluna idcurso em chave primária */
